@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+    <style>
+        body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f0e5;
+      margin: 0;
+      padding: 20px;
+      font-family: 'Georgia', serif;
+      color: #333;
+      line-height: 1.6; 
+    }
+        #topo {
+            text-align: right;
+            position: absolute;
+            top: 5px;
+            left: 1350px;
+        }
+       header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+        table {
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+            width: 60%;
+            margin: 20px auto;
+        }
+        th, td {
+            font-size: arial;
+            font-size: 1.1rem;
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        thead {
+            background-color: #144284;
+            color: #fff;
+        }
+        #classif{
+            text-align: center;
+        }
+        
+        footer {
+            background-color: rgb(80, 88, 88);
+            font-size: 15px;
+            padding: 30px;
+        }
+        
+    </style>
+
+</head>
+<body>
+<header>
+        <h1>LUPPI</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../pages/aneis.html">Anéis</a>
+            <a href="../pages/colares.html">Colares</a>
+            <a href="../pages/pulseira.html">Pulseiras</a>
+            <a href="../pages/outros.html">Outros</a>
+        </nav>
+    </header>
+    <div id="tabela"></div>
+    <script>
+        const tabelaHTMl = `
+        <table>
+            <thead>
+                <tr>
+                    <th id="classif">Tipo</th>
+                    <th id="classif">Produto</th>
+                    <th id="classif">Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Anel</th>
+                    <th>Folheado a ouro 18 k com pedra</th>
+                    <th>R$ 70</th>
+                </tr>
+                <tr>
+                    <th>Anel</th>
+                    <th>Folheado a ouro 18 k com pedra</th>
+                    <th>R$ 70</th>
+                </tr>
+                <tr>
+                    <th>Anel</th>
+                    <th>Folheado a ouro 18k, formato serpente</th>
+                    <th>R$ 60
+                </tr>
+                <tr>
+                    <th>Anel</th>
+                    <th>prata, aro 14</th>
+                    <th>R$ 55</th>
+                </tr>
+                <tr>
+                    <th>Anel</th>
+                    <th>prata com zirconia, aro 11</th>
+                    <th>R$ 60</th>
+                </tr>
+                <tr>
+                    <th>Anel</th>
+                    <th>solitário de prata com zirconia aro 20</th>
+                    <th>R$ 75</th>
+                </tr>
+                <tr>
+                    <th>Colar</th>
+                    <th>par de cordões de bolinha folheados a ouro 18k um com 45cm outro com 40cm</th>
+                    <th>R$ 75</th>
+                </tr>
+                <tr>
+                    <th>Colar</th>
+                    <th>semijóia, cordão folheado a ouro com 45 cm</th>
+                    <th>R$ 180</th>
+                </tr>
+                <tr>
+                    <th>Colar</th>
+                    <th>semijóia, gargantilha folheada a ouro, com inscrição de " i love you " , 45 cm</th>
+                    <th>R$ 170</th>
+                </tr>
+                <tr>
+                    <th>Colar</th>
+                    <th>linda gargantilha folheada a ouro , mais que semijóia, 45 cm</th>
+                    <th>R$ 220</th>
+                </tr>
+                <tr>
+                    <th>Colar</th>
+                    <th>linda gargantilha folheada a ouro, mais que semijóia, 40 cm</th>
+                    <th>R$ 200</th>
+                </tr>
+                <tr>
+                    <th>Pulseiras</th>
+                    <th>3 pulseiras folheadas a ouro com 18 centímetros</th>
+                    <th>R$ 100</th>
+                </tr>
+                <tr>
+                    <th>Pulseiras</th>
+                    <th>3 pulseiras folheadas a ouro com 19 centímetros</th>
+                    <th>R$ 69</th>
+                </tr>
+                <tr>
+                    <th>Pulseiras</th>
+                    <th>2 pulseiras folheadas a ouro com 20 centímetros</th>
+                    <th>R$ 100</th>
+                </tr>
+                <tr>
+                    <th>Pulseiras</th>
+                    <th>3 pulseiras folheadas a ouro, 16 centímetros</th>
+                    <th>R$ 95</th>
+                </tr>
+                <tr>
+                    <th>Pulseiras</th>
+                    <th>pulseira folheada a ouro, com 18 cm de comprimento</th>
+                    <th>R$ 60</th>
+                </tr>
+                <tr>
+                    <th>Pulseiras</th>
+                    <th>3 pulseiras folheadas ouro, 14 centímetros</th>
+                    <th>R$100</th>
+                </tr>
+                <tr>
+                    <th>Conjuntos</th>
+                    <th>conjunto corrente de 40 cm, pingente e brincos, folheados a ouro 18 k</th>
+                    <th>R$ 70</th>
+                </tr>
+                <tr>
+                    <th>Conjuntos</th>
+                    <th>conjunto com corrente 40 cm, pingente e brincos folheados a ouro</th>
+                    <th>R$ 70</th>
+                </tr>
+                <tr>
+                    <th>Conjuntos</th>
+                    <th>conjunto com corrente 40 cm, pingente e brincos folheados a ouro</th>
+                    <th>R$ 69</th>
+                </tr>
+                <tr>
+                    <th>Relógios</th>
+                    <th>relógio analógico, com visor noturno, caixa de 4 cm e pulseira de couro de 22 cm</th>
+                    <th>R$ 135</th>
+                </tr>
+                <tr>
+                    <th>Relógios</th>
+                    <th>relógio analógico, caixa 3 cm de diâmetro, pulseira 22 cm</th>
+                    <th>R$ 210</th>
+                </tr>
+
+            </tbody>
+
+        <table>
+    
+        `;
+        document.getElementById("tabela").innerHTML = tabelaHTMl;
+    </script>
+<footer style="background-color: #e9ecef; padding: 30px 20px; border-top: 1px solid #ccc; font-family: Georgia, serif; font-size: 0.95rem; color: #333;">
+  <div style="max-width: 900px; margin: auto; text-align: center;">
+    <p><strong>WhatsApp:</strong> (31) 9****-**36</p>
+    <p><strong>Email de contato:</strong> h*******************@gmail.com</p>
+    
+    <div style="margin-top: 15px;">
+      <a href="https://www.enjoei.com.br/@denis-00199e?sid=bfa450bd-7db8-481c-8931-8dac3db215f4-1748386630748&sr=near_regions&cc=MTE4MDE1OTEzMDE3MDgxMDk3OjE"target="_blank" style="margin: 0 10px; text-decoration: none; color: #0056b3;">Enjoei</a>
+      <a href="../pages/tabela.html" style="margin: 0 10px; text-decoration: none; color: #0056b3;">Tabela de Preços</a>
+      <a href="../pages/sobrenos.html" style="margin: 0 10px; text-decoration: none; color: #0056b3;">Sobre nós</a>
+      <a href="../pages/formulario.html" style="margin: 0 10px; text-decoration: none; color: #0056b3;">Pesquisa</a>
+      <a href="../pages/desconto.html" style="margin: 0 10px; text-decoration: none; color: #0056b3;">Cupom</a>
+
+    </div>
+  </div>
+</body>
+</html>

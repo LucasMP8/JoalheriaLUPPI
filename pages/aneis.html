@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUPPI</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+    color: #333;
+    line-height: 1.9;
+    background-color: #fcfcfc; 
+    }
+    header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        header h1 {
+             font-family: 'Playfair Display', serif;
+            font-size: 3.8rem;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+ 
+    h2 {
+      margin-bottom: 20px;
+    }
+ 
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+ 
+    .produto {
+      background-color: white;
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+ 
+    .produto img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+ 
+    .descricao {
+      font-size: 14px;
+      margin: 10px 0;
+    }
+ 
+    .preco {
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 5px;
+    }
+ 
+    .parcelamento {
+      font-size: 13px;
+      color: #555;
+    }
+ 
+    .etiqueta {
+      color: #7d5c38;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    #grid-secao{
+            margin-top: 0.2rem;
+            color: #fff;
+            text-align: center;
+    }
+    .grid div{
+            background-color: grey;
+            font-family: arial;
+            text-align: center;
+            font-size: 1.6rem;
+    }
+    .grid{
+            display:grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px,1fr));
+            gap: 3px;
+            text-align: center;
+    }
+    .descricaoProduto {
+            font-family: arial;
+            font-size: 5px;
+    }
+    footer {
+            background-color: rgb(80, 88, 88);
+            font-size: 15px;
+            padding: 30px;
+        }
+  </style>
+</head>
+<body>
+        <header>
+        <h1>LUPPI</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../pages/aneis.html">Anéis</a>
+            <a href="../pages/colares.html">Colares</a>
+            <a href="../pages/pulseira.html">Pulseiras</a>
+            <a href="../pages/outros.html">Outros</a>
+        </nav>
+    </header>
+
+        <h2>Aneis</h2>
+ 
+  <div class="catalogo">
+ 
+    <div class="produto">
+      <a href="https://www.enjoei.com.br/p/af56-anel-folheado-a-ouro-105199117?rsid=dfa8158f-b5ba-442a-ac3d-5f040673640a-1749430341572&rsp=3&rspix=16&vid=b071cc83-6201-45a9-aa28-eff7f5ff5835"target="_blank"><img src="../images/anel1.jpg" alt="Produto 1"></a>
+      <div class="descricao">semijóia, anel folheado a ouro com pedra, unisex, aro 32</div>
+      <div class="preco">R$ 95</div>
+      <div class="parcelamento">ou 8x de <strong>R$ 11,88</strong></div>
+    </div>
+ 
+    <div class="produto">
+      <a href="https://www.enjoei.com.br/p/af10-anel-folheado-a-ouro-113904330?rsid=dfa8158f-b5ba-442a-ac3d-5f040673640a-1749430341572&rsp=2&rspix=17&vid=dd2ebe46-1522-4184-9e10-2c09866ef3cf"target="_blank"><img src="../images/anel2.jpg" alt="Produto 2"></a>
+      <div class="etiqueta">Últimas peças</div>
+      <div class="descricao">anel folheado a ouro 18 k com pedra, aro 21</div>
+      <div class="preco">R$ 70</div>
+      <div class="parcelamento">ou 8x de <strong>R$ 8,75</strong></div>
+    </div>
+ 
+    <div class="produto">
+     <a href=" https://www.enjoei.com.br/p/af13-anel-folheado-a-ouro-18k-113906906?rsid=31eb51eb-35e9-4600-a46b-b504338cc130-1749431286672&rsp=2&rspix=18&vid=54b3acfc-289d-42bd-a3db-39c21f78c46e"target="_blank"><img src="../images/anel3.jpg" alt="Produto 3"></a>
+      <div class="descricao">anel folheado a ouro 18k, formato serpente, aro 14</div>
+      <div class="preco">R$ 60</div>
+      <div class="parcelamento">ou 8x de <strong>R$ 7,50</strong></div>
+    </div>
+
+  </div>
+    <!-- parte 2 -->
+  <div class="catalogo">
+      <div class="produto">
+      <a href="https://www.enjoei.com.br/p/ap-41-anel-de-prata-109910098?rsid=31eb51eb-35e9-4600-a46b-b504338cc130-1749431286672&rsp=3&rspix=5&vid=d4e05e29-64d4-4bdd-9c0d-c835a0053140"target="_blank"><img src="../images/anel4.jpg" alt="Produto 4"></a>
+      <div class="descricao">anel de prata, aro 14</div>
+      <div class="preco">R$ 45</div>
+      <div class="parcelamento">ou 8x de <strong>R$ 5,62</strong></div>
+    </div>
+ 
+    <div class="produto">
+      <a href="https://www.enjoei.com.br/p/ap09-anel-prata-zirconia-107652286?rsid=31eb51eb-35e9-4600-a46b-b504338cc130-1749431286672&rsp=2&rspix=6&vid=d5405f15-405b-4afd-a6c6-4500cec8f89e"target="_blank"><img src="../images/anel5.jpg" alt="Produto 5"></a>
+      <div class="etiqueta">Últimas peças</div>
+      <div class="descricao">anel de prata com zirconia, aro 11</div>
+      <div class="preco">R$ 70</div>
+      <div class="parcelamento">ou 8x de <strong>R$ 7,50</strong></div>
+    </div>
+ 
+    <div class="produto">
+     <a href="https://www.enjoei.com.br/p/ap74-solitario-prata-zirconia-122714294?rsid=31eb51eb-35e9-4600-a46b-b504338cc130-1749431286672&rsp=1&rspix=1&vid=dd66c4cf-98ed-4616-b181-4cbb65ffa40b"target="_blank"><img src="../images/anel6.jpg" alt="Produto 6"></a>
+      <div class="descricao">anel solitário de prata com zirconia aro 20</div>
+      <div class="preco">R$ 75</div>
+      <div class="parcelamento">ou 8x de <strong>R$ 9,38</strong></div>
+    </div>
+  </div>
+   
+
+<footer style="background-color: #e9ecef; padding: 30px 20px; border-top: 1px solid #ccc; font-family: Georgia, serif; font-size: 0.95rem; color: #333;">
+  <div style="max-width: 900px; margin: auto; text-align: center;">
+    <p><strong>WhatsApp:</strong> (31) 9****-**36</p>
+    <p><strong>Email de contato:</strong> h*******************@gmail.com</p>
+    
+    <div style="margin-top: 15px;">
+      <a href="https://www.enjoei.com.br/@denis-00199e?sid=bfa450bd-7db8-481c-8931-8dac3db215f4-1748386630748&sr=near_regions&cc=MTE4MDE1OTEzMDE3MDgxMDk3OjE"target="_blank" style="margin: 0 10px; text-decoration: none; color: #0056b3;">Enjoei</a>
+      <a href="../pages/tabela.html" style="margin: 0 10px; text-decoration: none; color: #0056b3;">Tabela de Preços</a>
+      <a href="../pages/sobrenos.html" style="margin: 0 10px; text-decoration: none; color: #0056b3;">Sobre nós</a>
+      <a href="../pages/formulario.html" style="margin: 0 10px; text-decoration: none; color: #0056b3;">Pesquisa</a>
+      <a href="../pages/desconto.html" style="margin: 0 10px; text-decoration: none; color: #0056b3;">Cupom</a>
+    </div>
+  </div>
+</body>
+</html>

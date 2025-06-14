@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0;">
+    <title>LUPPI</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+        }
+
+         body {
+            font-family: 'Georgia', serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #fcfcfc; 
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        header h1 {
+             font-family: 'Playfair Display', serif;
+            font-size: 3.8rem;   
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        #imgAnel {
+            width: 450px;
+            height: 500px;
+        }
+
+        #imgColar {
+            width: 450px;
+            height: 500px;
+        }
+
+        #imgPul {
+            width: 450px;
+            height: 500px;
+        }
+
+        footer {
+            background-color: rgb(80, 88, 88);
+            font-size: 15px;
+            padding: 30px;
+        }
+
+        .descricaoProduto {
+            font-family: arial;
+            font-size: 5px;
+        }
+
+        #maisVendido {
+            text-align: center;
+            font-size: 2.2em;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            text-align: center;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .grid-item p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        h4 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            position: absolute;
+        }
+
+        #relogio {
+            margin: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 50px;
+        }
+
+        #Aliancas {
+            margin: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 50px;
+        }
+
+        #imgRel {
+            width: 450px;
+            height: 450px;
+            position: absolute;
+            top: 1150px;
+            left: 1300px;
+        }
+
+        #divRel {
+            height: 450px;
+            font-size: 15px;
+        }
+
+        #divAli {
+            height: 450px;
+            font-size: 15px;
+        }
+
+        #divPre {
+            height: 450px;
+            font-size: 15px;
+        }
+
+        #imgPre {
+            width: 450px;
+            height: 450px;
+            position: absolute;
+            top: 1770px;
+            left: 1300px;
+        }
+
+        #imgAni {
+            width: 450px;
+            height: 450px;
+            position: absolute;
+            top: 2370px;
+            left: 1300px;
+        }
+
+        #Presente {
+            margin: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 50px;
+        }
+
+        .separador {
+            height: 50px;
+            background-color: beige;
+        }
+
+        #imgPrin {
+            width: 100%;
+            /* width: 1904px; */
+
+        }
+
+        h5 {
+            position: absolute;
+            top: 1045px;
+            left: 195px;
+            font-size: 30px;
+            color: white;
+            
+        }
+
+        h5 a {
+             color: inherit; /* Isso faz com que o link herde a cor do elemento pai (h5) */
+             text-decoration: none; /* Remove o sublinhado */
+        }
+
+        h2 {
+            font-family: 'Courier New', Courier, monospace;
+            position: absolute;
+            top: 1045px;
+            left: 1057px;
+            font-size: 30px;
+            color: white;
+        }
+
+        h2 a {
+             color: inherit; 
+             text-decoration: none; 
+        }
+
+
+        h6 {
+            position: absolute;
+            top: 1045px;
+            left: 625px;
+            font-size: 30px;
+            color: white;
+        }
+
+        h6 a {
+             color: inherit; 
+             text-decoration: none; 
+        }
+
+        #relogiomoda {
+            position: absolute;
+            top: 1045px;
+            left: 1485px;
+            font-size: 30px;
+            color: white;
+        }
+
+        #relogiomoda a {
+             color: inherit; 
+             text-decoration: none; 
+        }
+
+        pre {
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>LUPPI</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="pages/aneis.html">Anéis</a>
+            <a href="pages/colares.html">Colares</a>
+            <a href="pages/pulseira.html">Pulseiras</a>
+            <a href="pages/outros.html">Outros</a>
+        </nav>
+    </header>
+
+
+    <img src="./images/Foto home.png" alt="" id="imgPrin">
+
+    <h1 id="relogio">Relógio Technos-Elegância e Precisão</h1>
+    <div id="divRel">
+        <pre>
+
+    Com caixa de 3 cm de diâmetro e pulseira de 22 cm, 
+  este relógio analógico da Technos combina conforto e sofisticação em um design atemporal. 
+  Seu mostrador minimalista transmite elegância, enquanto a pulseira ajustável 
+  garante um encaixe perfeito no pulso. Ideal para o dia a dia ou para ocasiões 
+  que pedem um toque de requinte, é o acessório ideal para quem valoriza 
+  estilo e pontualidade.
+        </pre>
+    </div>
+
+    <div><a href="https://www.enjoei.com.br/p/relogio-technos-analogico-110443823?rsid=72b3ce43-4931-4bdd-a434-17d9e221b229-1749440515568&rsp=1&rspix=1&vid=2a95b1ee-0223-4696-add7-377c47a6f7cf" target="_blank"><img src="./images/IMG_RelogioHome.jpg" alt="" id="imgRel"></a></div>
+
+    <div class="separador"></div>
+    <br>
+
+    <h1 id="Presente">Um presente para você</h1>
+    <div id="divPre">
+        <pre>
+
+    Apresentamos o nosso mais novo conjunto. Composto por uma sofisticada corrente de 40 cm, 
+  um elegante pingente e brincos igualmente encantadores, 
+  todos folheados a ouro, garantindo um brilho marcante e atemporal.
+  Perfeito para ocasiões especiais ou para dar um toque de elegância no seu dia a dia, é 
+  a escolha ideal para quem busca beleza, estilo e sofisticação. 
+  Seja para presentear alguém querido ou para se presentear com uma peça única e refinada, 
+  este conjunto traz a elegância clássica que nunca sai de moda.
+        </pre>
+    </div>
+    <div><a href="./pages/outros.html"><img src="images/IMG_Presente.jpg" alt="" id="imgPre"></a></div>
+
+
+    <div class="separador"></div>
+
+    <h1 id="Aliancas">Anéis</h1>
+    <div id="divAli">
+        <pre>
+    Eleve seu dia a dia com um toque de luxo. Apresentamos nosso anel folheado a ouro 18K,
+  adornado com uma pedra de brilho intenso que realça qualquer visual com sofisticação e elegância. 
+  Com design clássico e acabamento impecável, o aro 21 oferece conforto e encaixe perfeito. 
+  Ideal para ocasiões especiais ou para adicionar charme ao seu dia a dia, esta joia é perfeita 
+  para quem preza por estilo e qualidade. Seja para presentear ou para si mesmo, 
+  este anel é sinônimo de beleza duradoura e elegância refinada.
+        </pre>
+    </div>
+    <div><a href="./pages/aneis.html"><img src="./images/IMG_AnelHome.jpg" alt="" id="imgAni"></a></div>
+    
+    <h5>
+        <a href="pages/aneis.html">Anéis</a>
+    </h5>
+
+    <h6>
+        <a href="pages/colares.html">Colares</a>
+    </h6>
+
+    <h2>
+        <a href="pages/pulseira.html">Pulseiras</a>
+    </h2>
+    <p id="relogiomoda">
+        <a href="pages/outros.html">Relogio</a>
+    </p>
+
+
+<footer style="background-color: #e9ecef; padding: 30px 20px; border-top: 1px solid #ccc; font-family: Georgia, serif; font-size: 0.95rem; color: #333;">
+  <div style="max-width: 900px; margin: auto; text-align: center;">
+    <p><strong>WhatsApp:</strong> (31) 9****-**36</p>
+    <p><strong>Email de contato:</strong> h*******************@gmail.com</p>
+    
+    <div style="margin-top: 15px;">
+      <a href="https://www.enjoei.com.br/@denis-00199e?sid=bfa450bd-7db8-481c-8931-8dac3db215f4-1748386630748&sr=near_regions&cc=MTE4MDE1OTEzMDE3MDgxMDk3OjE"target="_blank" style="margin: 0 10px; text-decoration: none; color: #0056b3;">Enjoei</a>
+      <a href="pages/tabela.html" style="margin: 0 10px; text-decoration: none; color: #0056b3;">Tabela de Preços</a>
+      <a href="pages/sobrenos.html" style="margin: 0 10px; text-decoration: none; color: #0056b3;">Sobre nós</a>
+      <a href="pages/formulario.html" style="margin: 0 10px; text-decoration: none; color: #0056b3;">Pesquisa</a>
+      <a href="pages/desconto.html" style="margin: 0 10px; text-decoration: none; color: #0056b3;">Cupom</a>
+    </div>
+  </div>
+</body>
+
+</html>

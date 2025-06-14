@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUPPI</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+           
+            background-color: #fcfcfc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.8rem;   
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-800">
+    <header>
+        <h1>LUPPI</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../pages/aneis.html">Anéis</a>
+            <a href="../pages/colares.html">Colares</a>
+            <a href="../pages/pulseira.html">Pulseiras</a>
+            <a href="../pages/outros.html">Outros</a>
+        </nav>
+    </header>
+
+
+    <main class="container mx-auto px-4 py-12 flex flex-col items-center justify-center min-h-[calc(100vh-250px)]">
+        <section class="bg-white p-8 rounded-lg shadow-xl max-w-lg w-full">
+            <h1 class="text-3xl font-bold text-gray-900 mb-6 font-serif text-center">Pesquisa de Perfil do Usuário</h1>
+
+            <form id="form" action="#" method="get" class="space-y-6">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b pb-2">Dados do Cliente</h2>
+
+                <div>
+                    <label for="nome" class="block text-gray-700 text-lg font-semibold mb-2">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Informe o nome"
+                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                </div>
+
+                <div>
+                    <label for="fone" class="block text-gray-700 text-lg font-semibold mb-2">Telefone:</label>
+                    <input type="text" id="fone" name="fone" placeholder="Informe o Telefone"
+                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                </div>
+
+                <div>
+                    <label for="email" class="block text-gray-700 text-lg font-semibold mb-2">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Informe o email"
+                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                </div>
+
+                <div>
+                    <legend class="block text-gray-700 text-lg font-semibold mb-3">Selecione a sua faixa etária:</legend>
+                    <div class="space-y-2">
+                        <p>
+                            <input type="radio" id="faixaEtaria1" name="idade" value="18e30" class="mr-2">
+                            <label for="faixaEtaria1" class="text-gray-700 text-base">entre 18 e 30 anos</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="faixaEtaria2" name="idade" value="31e40" class="mr-2">
+                            <label for="faixaEtaria2" class="text-gray-700 text-base">entre 31 e 40 anos</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="faixaEtaria3" name="idade" value="41e50" class="mr-2">
+                            <label for="faixaEtaria3" class="text-gray-700 text-base">entre 41 e 50 anos</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="faixaEtaria3" name="idade" value="51e60" class="mr-2">
+                            <label for="faixaEtaria3" class="text-gray-700 text-base">entre 51 e 60 anos</label>
+                        </p>
+                         <p>
+                            <input type="radio" id="faixaEtaria3" name="idade" value="60+" class="mr-2">
+                            <label for="faixaEtaria3" class="text-gray-700 text-base">A partir de 61</label>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+                    <input type="reset" value="Cancelar" title="Limpar dados"
+                        class="bg-gray-200 text-gray-800 font-semibold py-3 px-6 rounded-lg shadow-md ease-in-out">
+                    <input type="submit" value="Confirmar" title="Enviar dados"
+                        class="bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md ease-in-out">
+                </div>
+            </form>
+        </section>
+    </main>
+
+<footer style="background-color: #e9ecef; padding: 30px 20px; border-top: 1px solid #ccc; font-family: Georgia, serif; font-size: 0.95rem; color: #333;">
+  <div style="max-width: 900px; margin: auto; text-align: center;">
+    <p><strong>WhatsApp:</strong> (31) 9****-**36</p>
+    <p><strong>Email de contato:</strong> h*******************@gmail.com</p>
+    
+    <div style="margin-top: 15px;">
+      <a href="https://www.enjoei.com.br/@denis-00199e?sid=bfa450bd-7db8-481c-8931-8dac3db215f4-1748386630748&sr=near_regions&cc=MTE4MDE1OTEzMDE3MDgxMDk3OjE"target="_blank" style="margin: 0 10px; text-decoration: none; color: #0056b3;">Enjoei</a>
+      <a href="../pages/tabela.html" style="margin: 0 10px; text-decoration: none; color: #0056b3;">Tabela de Preços</a>
+      <a href="../pages/sobrenos.html" style="margin: 0 10px; text-decoration: none; color: #0056b3;">Sobre nós</a>
+      <a href="../pages/formulario.html" style="margin: 0 10px; text-decoration: none; color: #0056b3;">Pesquisa</a>
+      <a href="../pages/desconto.html" style="margin: 0 10px; text-decoration: none; color: #0056b3;">Cupom</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
